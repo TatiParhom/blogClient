@@ -22,7 +22,7 @@ useHead({
 
   ],
   bodyAttrs: {
-    class: 'container mx-auto'
+    class: 'container mx-auto bg-white dark:bg-gray-900'
   },
 })
 </script>
