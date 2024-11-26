@@ -11,7 +11,7 @@
 </template>
 
 
-<!-- <script setup>
+<script setup>
 const isDarkMode = ref('') // класс для HTML
 const isDark = ref(false) // по умолчанию светлая тема
 
@@ -42,43 +42,6 @@ useHead({
         class: isDarkMode.value
     }
 })
-</script> -->
+</script> 
 
-<script setup>
-
-const isDarkMode = ref('') // класс для HTML
-const isDark = ref(false) // по умолчанию светлая тема
-
-onMounted(() => {
-    if (localStorage.getItem('color-theme') === 'dark') {
-        isDark.value = true;
-        isDarkMode.value = 'dark'
-    } else {
-        isDark.value = false;
-        isDarkMode.value = ''
-    }
-});
-
-// // Функция для переключения темы
-const toggleTheme = () => {
-    isDark.value = !isDark.value;
-    if (isDark.value) {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('color-theme', 'dark');
-    } else {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('color-theme', 'light');
-    }
-};
-
-const htmlClass = computed(() => {
-    return isDarkMode.value;
-});
-
-useHead({
-    htmlAttrs: {
-        class: htmlClass.value 
-    }
-})
-</script>
 
