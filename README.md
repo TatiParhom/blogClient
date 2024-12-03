@@ -22,7 +22,7 @@ bun install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://e436b3cc88eb.vps.myjino.ru/`:
 
 ```bash
 # npm

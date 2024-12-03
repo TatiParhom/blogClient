@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="http://localhost:3000/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="http://e436b3cc88eb.vps.myjino.ru//" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://6bc41f582d60.vps.myjino.ru/uploads/cf2ff62cdf9411e29b1586b6a3b862cf_21bf27921f.png" class="h-8"
           alt="Flowbite Logo" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Психология и
