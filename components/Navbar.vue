@@ -80,6 +80,7 @@
       </div>
     </div>
   </nav>
+  <p>{{  }}</p>
 </template>
 
 
@@ -87,6 +88,8 @@
 const route = useRoute()
 const isActive = (path) => route.path.split('/')[1] === path
 </script>
+
+
 
 <!-- <script setup>
 const route = useRoute()
