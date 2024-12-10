@@ -93,11 +93,17 @@
 </template>
 
 <script setup>
+import { watch } from 'vue';
+
 const search = useSearchStore()
 
 const route = useRoute()
 const isActive = (path) => route.path.split('/')[1] === path
 
+const inputSearch = ref()
+watch(inputSearch, async () => {
+   console.log()
+})
 
 const router = useRouter()
 function goToSearch() {
