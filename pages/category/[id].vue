@@ -31,6 +31,6 @@
   const { id } = useRoute().params
   const api = await $fetch(`https://6bc41f582d60.vps.myjino.ru/api/categories/${id}?populate=posts.img&populate=posts.categories`)
   const posts = api.data.posts
-  const displayedPosts = ref(posts.slice(0, 12)) // отображаем первые 12 статей
+  const displayedPosts = ref(posts.slice(0, 3)) // отображаем первые 3 статьи
   const loadMore = () => displayedPosts.value = posts.slice(0, displayedPosts.value.length + 4) // добавляем еще 4
 </script>
